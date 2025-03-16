@@ -1,0 +1,234 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: fanumber-Regular;
+  font-weight: 400;
+  src: url('../src/fonts/YekanBakhFaNum-Regular.woff') format("woff");
+}
+@font-face {
+  font-family: fanumber-Bold;
+  font-weight: 400;
+  src: url('../src/fonts/YekanBakhFaNum-Bold.woff') format("woff");
+}
+@font-face {
+  font-family: payda-Regular;
+  font-weight: 400;
+  src: url('../src/fonts/payda/woff/PeydaWeb-Regular.woff') format("woff");
+}
+@font-face {
+  font-family: payda-Medium;
+  font-weight: 500;
+  src: url('../src/fonts/payda/woff/PeydaWeb-Medium.woff') format("woff");
+}
+@font-face {
+  font-family: payda-SemiBold;
+  font-weight: 600;
+  src: url('../src/fonts/payda/woff/PeydaWeb-SemiBold.woff') format("woff");
+}
+@font-face {
+  font-family: payda-Bold;
+  font-weight: 700;
+  src: url('../src/fonts/payda/woff/PeydaWeb-Bold.woff') format("woff");
+}
+@font-face {
+  font-family: payda-ExtraBold;
+  font-weight: 800;
+  src: url('../src/fonts/payda/woff/PeydaWeb-ExtraBold.woff') format("woff");
+}
+@font-face {
+  font-family: payda-Black;
+  font-weight: 900;
+  src: url('../src/fonts/payda/woff/PeydaWeb-Black.woff') format("woff");
+}
+@font-face {
+  font-family: Montserrat-Regular;
+
+  src: url('../src/fonts/Montserrat-Regular.ttf') format("trueType");
+}
+@font-face {
+  font-family: Montserrat-Bold;
+
+  src: url('../src/fonts/Montserrat-Bold.ttf') format("trueType");
+}
+.font-faNumRegular{
+  font-weight: 400;
+  @apply ltr:font-MontserratRegular;
+  
+}
+.font-faNumBold{
+  font-weight: 700;
+  @apply ltr:font-MontserratBold;
+}
+.font-normal{
+  font-weight: 400;
+  @apply rtl:font-paydaRegular ltr:font-MontserratRegular;
+}
+.font-medium{
+  font-weight: 500;
+  @apply rtl:font-paydaMedium;
+}
+.font-semibold{
+  font-weight: 600;
+  @apply rtl:font-paydaSemiBold ltr:font-MontserratBold;
+}
+.font-bold{
+  font-weight: 700;
+  @apply rtl:font-paydaBold ltr:font-MontserratBold;
+}
+.font-extrabold{
+  font-weight: 800;
+  @apply rtl:font-paydaExtraBold ltr:font-MontserratBold;
+}
+.font-black{
+  font-weight: 900;
+  @apply rtl:font-paydaBlack ltr:font-MontserratBold;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: payda-Regular !important;
+  user-select: none;
+  overflow-x: hidden;
+  background-color: #000000;
+}
+
+/* global styles */
+a {
+  cursor: pointer;
+  transition: all .4s
+}
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-between {
+  @apply flex items-center justify-between;
+}
+
+.transition {
+  @apply transition-all duration-300;
+}
+.bg-gradient-1{
+  background: linear-gradient(85.55deg, #32AB6B 7.54%, #FA6868 96.32%);
+}
+/* hover */
+.btnHover {
+  transition: all .4s;
+  overflow: hidden;
+  position: relative;
+}
+.btnHover::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient( 120deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 70% );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+.btnHover:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+/* accordion */
+.acordionBtn{
+  cursor: pointer;
+}
+.acordionBtn > svg{
+  transition: all .4s;
+}
+.acordionBtn > svg.active{
+  transform: rotate(180deg);
+}
+.acordionContent{
+  max-height: 0;
+  overflow: hidden;
+  transition: all .4s;
+}
+.acordionContent.active {
+  max-height: 2000px;
+  overflow: visible;
+}
+/* overlay */
+#overlay{
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.618);
+  z-index: 20;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s;
+}
+#overlay.active{
+  visibility: visible;
+  opacity: 100%;
+}
+.mobileMenu.active{
+  left: 0;
+}
+.swiperBanner .swiper-button-prev,.swiperBanner .swiper-button-next {
+  /* width: 40px !important;
+  height: 40px !important; */
+  border-radius: 50%;
+  top: auto !important;
+  bottom: 64px !important;
+}
+.swiperBanner .swiper-button-next{
+  right: auto !important;
+  left: 68px !important;
+}
+.swiper-button-prev::after {
+  content: url('../src/img/Arrow (2).png') !important;
+}
+.swiper-button-next::after {
+  content: url('../src/img/Arrow.png') !important;
+}
+.banner{
+  height: 100vh;
+  background-image: url('../src/img/26701996-53f2-4859-9476-4cd2561529b2-min.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -112px;
+}
+@media (max-width: 1024px) {
+  .banner {
+    margin-top: -120px;
+  }
+}
+@media (max-width: 992px) {
+  .banner {
+    height: 70vh;
+  }
+}
+@media (max-width: 768px) {
+  .banner {
+    background-size: cover;
+  }
+}
+@media (max-width: 576px) {
+  .banner {
+    height: 48vh;
+  }
+  .swiperBanner .swiper-button-prev, .swiperBanner .swiper-button-next {
+    bottom: 5px !important;
+  }
+}

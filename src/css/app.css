@@ -115,6 +115,16 @@ a {
 .bg-gradient-1{
   background: linear-gradient(85.55deg, #32AB6B 7.54%, #FA6868 96.32%);
 }
+.bg-gradient-2{
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bg-gradient-3{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.51) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bg-blur-1{
+  backdrop-filter: blur(15.207890510559082px);
+  background-color: #d9d9d915;
+}
 /* hover */
 .btnHover {
   transition: all .4s;

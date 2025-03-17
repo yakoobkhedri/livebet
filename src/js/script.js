@@ -12,47 +12,29 @@ overlay.addEventListener('click', function () {
   overlay.classList.remove('active');
   mobileMenu.classList.remove('active');
 })
-// acordion
-
-let acordionBtn = Array.from(document.getElementsByClassName('acordionBtn'));
-
-acordionBtn.forEach((item) => {
-  item.addEventListener('click', function () {
-    item.nextElementSibling.classList.toggle('active');
-    item.querySelector('svg.arrow').classList.toggle('active');
-  })
-})
-
 // swiper
 
-var swiperBanner = new Swiper(".swiperBanner", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-var popular = new Swiper(".popular", {
+var games = new Swiper(".games", {
   slidesPerView: 1,
-  spaceBetween: 18,
+  spaceBetween: 27,
   breakpoints: {
     768: {
       slidesPerView: 2,
     },
-    992: {
-      slidesPerView: 3,
+    1200: {
+      slidesPerView: 4,
     }
   },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
 });
-var blog = new Swiper(".blog", {
+var casino = new Swiper(".casino", {
   slidesPerView: 1,
-  spaceBetween: 18,
+  spaceBetween: 25,
   breakpoints: {
-    1200: {
+    768: {
       slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
     }
   },
 });

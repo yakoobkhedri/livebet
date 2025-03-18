@@ -38,3 +38,27 @@ var casino = new Swiper(".casino", {
     }
   },
 });
+var testimonials = new Swiper(".testimonials", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 2,
+    }
+  },
+});
+var faqs = new Swiper(".faqs", {
+  slidesPerView: 1,
+  spaceBetween: 22,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    }
+  },
+});

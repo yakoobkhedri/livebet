@@ -37,6 +37,8 @@ var casino = new Swiper(".casino", {
       slidesPerView: 3,
     }
   },
+  // centeredSlides: true,
+  loop: true,
 });
 var testimonials = new Swiper(".testimonials", {
   slidesPerView: 1,

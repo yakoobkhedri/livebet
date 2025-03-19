@@ -16,43 +16,71 @@
   <!-- menu -->
   <div class="mobileMenu w-64 bg-black fixed top-0 bottom-0 z-50 -left-72 transition">
     <ul class="p-6 font-semibold">
-      <li class="mb-8"><a class="text-white hover:text-primary text-2xl">Ev</a></li>
-      <li class="mb-8"><a class="text-white hover:text-primary text-2xl">Hakkımızda</a></li>
-      <li class="mb-8"><a class="text-white hover:text-primary text-2xl">Hizmetler</a></li>
-      <li class="mb-8"><a class="text-white hover:text-primary text-2xl">Haberler</a></li>
+      <li class="mb-8"><a class="text-white hover:text-primary text-2xl">صفحه اصلی</a></li>
+      <li class="mb-8"><a class="text-white hover:text-primary text-2xl">خدمات</a></li>
+      <li class="mb-8"><a class="text-white hover:text-primary text-2xl">درباره ما</a></li>
+      <li class="mb-8"><a class="text-white hover:text-primary text-2xl">وبلاگ</a></li>
+      <li class="mb-8"><a class="text-white hover:text-primary text-2xl">ارتباط با ما</a></li>
+      <li class="sm:hidden">
+        <a class="w-full h-11 btnHover rounded-[100px] bg-[#8E403D] shadow-1 text-lg px-2 text-white border border-white flex-center">
+          ورود/ثبت‌نام
+        </a>
+      </li>
     </ul>
   </div>
 
   <!-- header -->
-  <header class="">
+  <header class="relative z-1">
     <div class="max-w-content mx-auto px-4 py-10">
-      <div class="flex items-center lg:justify-between justify-end">
-        <ul class="text-white hidden lg:flex items-center gap-6 text-2xl">
-          <li class="transition hover:text-primary">
-            <a>Ev</a>
+      <div class="p-4 py-5 sm:pr-[34px] pr-4 bg-gradient-4 rounded-[42px] bg-blur-2 flex items-center justify-between gap-3 gradient-border">
+       <div class="flex items-center gap-3">
+        <div id="openMenu" class="min-[890px]:hidden cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list-ul text-white" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+          </svg>
+        </div>
+        <a class="flex items-center gap-2 font-bold text-white text-[21px]">
+          <div class="flex items-center">
+            <div class="w-[18px] h-[18px] rounded-full bg-secondary"></div>
+            <div class="w-[18px] h-[18px] rounded-full bg-primary -mr-2"></div>
+          </div>
+          <p>محل درج لوگو</p>
+        </a>
+       </div>
+        <ul class="text-white text-lg font-medium hidden min-[890px]:flex items-center gap-7">
+          <li class="active">
+            <a>
+              صفحه اصلی
+            </a>
           </li>
-          <div class="bg-white h-6 w-[1px]"></div>
-          <li class="transition hover:text-primary">
-            <a>Hakkımızda</a>
+          <li>
+            <a>
+              خدمات
+            </a>
           </li>
-          <div class="bg-white h-6 w-[1px]"></div>
-          <li class="transition hover:text-primary">
-            <a>Hizmetler</a>
+          <li>
+            <a>
+              درباره ما
+            </a>
           </li>
-          <div class="bg-white h-6 w-[1px]"></div>
-          <li class="transition hover:text-primary">
-            <a>Haberler</a>
+          <li>
+            <a>
+              وبلاگ
+            </a>
+          </li>
+          <li>
+            <a>
+              ارتباط با ما
+            </a>
           </li>
         </ul>
-        <div class="flex items-center gap-4">
-          <div class="cursor-pointer w-10 h-10 ml-auto lg:hidden" id="openMenu">
-            <svg class="w-6 sm:w-10" width="41" height="40" viewBox="0 0 41 40" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M4.11169 20H36.1117" stroke="white" stroke-width="3" stroke-linecap="round" />
-              <path d="M19.1117 10L36.1117 10" stroke="white" stroke-width="3" stroke-linecap="round" />
-              <path d="M4.11169 30L21.1117 30" stroke="white" stroke-width="3" stroke-linecap="round" />
-            </svg>
-          </div>
+        <div class="flex items-center gap-5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-search text-white cursor-pointer" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg>
+          <a class="btnHover w-[140px] h-11 rounded-[100px] bg-[#8E403D] shadow-1 text-lg px-2 text-white border border-white hidden sm:flex justify-center items-center">
+            ورود/ثبت‌نام
+          </a>
         </div>
       </div>
     </div>
@@ -61,25 +89,25 @@
   <!-- main -->
   <main>
 
-    <section class="pt-20">
+    <section class="md:pt-20 pt-7">
       <img alt="bg" src="../img/Ellipse 947.png" class="absolute left-0 top-0">
       <img alt="bg" src="../img/Ellipse 950.png" class="absolute right-0 -bottom-[160%]">
-      <div class="max-w-content mx-auto px-4 relative pl-12 pr-28">
-        <div class="grid grid-cols-12 gap-20 items-center">
-          <div class="col-span-7">
-            <h3 class="text-[44px] text-white font-black leading-[117%]">
+      <div class="max-w-content mx-auto px-4 relative min-[1080px]:pl-12 min-[1080px]:pr-28">
+        <div class="grid grid-cols-12 gap-y-12 sm:gap-y-20 gap-x-0 lg:gap-x-20 items-center">
+          <div class="lg:col-span-7 col-span-12 order-last lg:order-first">
+            <h3 class="sm:text-[44px] text-3xl text-white font-black leading-[117%]">
               اینجا جاییه که <br>
               <span class="text-primary">هیجان به اوج می‌رسه!</span>
             </h3>
-            <p class="mt-11 font-medium text-[21px] text-white text-justify">
+            <p class="sm:mt-11 mt-6 font-medium text-base sm:text-[21px] text-white text-justify">
               لورم ایپسـوم متن ساختگی با تولید ســــــــادگی نامفهوم از صنعــت چاپ، و با استفاده از طراحان گرافــیک است،
               چاپگرها و متون بلکه روزنامــه و مجله است.
             </p>
-            <div class="mt-11 flex items-center justify-end gap-2">
-              <a class="w-[123px] h-12 text-white rounded-xl border border-[#CCCCCC] font-bold text-lg flex-center">
+            <div class="sm:mt-11 mt-6 flex items-center justify-end gap-2">
+              <a class="btnHover w-[123px] h-12 text-white rounded-xl border border-[#CCCCCC] font-bold text-lg flex-center">
                 درباره ما
               </a>
-              <a class="w-[123px] h-12 bg-gradient-1 text-white rounded-xl font-bold text-lg flex-center gap-1.5">
+              <a class="btnHover2 w-[123px] h-12 bg-gradient-1 text-white rounded-xl font-bold text-lg flex-center gap-1.5">
                 <p>بزن بریم!</p>
                 <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -89,8 +117,8 @@
               </a>
             </div>
           </div>
-          <div class="col-span-5">
-            <div class="relative">
+          <div class="lg:col-span-5 col-span-12">
+            <div class="relative animate-pulse">
               <img alt="img" src="../img/Group 1171282754.png"
                 class="absolute inset-x-0 bottom-0 mx-auto w-[76%] h-[86%]">
               <img alt="img" class="w-full relative" src="../img/8f131db4-17f0-4c6b-8963-450abaf8a75d copy 1 1.png">
@@ -100,24 +128,24 @@
       </div>
     </section>
 
-    <section class="relative py-[133px]">
-      <div class="max-w-content mx-auto px-4 pl-12 pr-28">
-        <div class="grid grid-cols-4 gap-12">
-          <div class="flex items-center gap-[14px] border-l border-[#8A8A8A]">
+    <section class="relative md:py-[133px] py-20">
+      <div class="max-w-content mx-auto px-4 min-[1080px]:pl-12 min-[1080px]:pr-28">
+        <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-12">
+          <div class="flex items-center gap-[14px] sm:border-l border-[#8A8A8A]">
             <img alt="icon" src="../img/star-shooting.png">
             <div>
               <p class="font-medium text-lg text-primary">لورم ایپسوم</p>
               <p class="text-white text-[13px] mt-0.5">لورم ایپسوم متن نمایشی</p>
             </div>
           </div>
-          <div class="flex items-center gap-[14px] border-l border-[#8A8A8A]">
+          <div class="flex items-center gap-[14px] lg:border-l border-[#8A8A8A]">
             <img alt="icon" src="../img/rocket-launch.png">
             <div>
               <p class="font-medium text-lg text-primary">لورم ایپسوم</p>
               <p class="text-white text-[13px] mt-0.5">لورم ایپسوم متن نمایشی</p>
             </div>
           </div>
-          <div class="flex items-center gap-[14px] border-l border-[#8A8A8A]">
+          <div class="flex items-center gap-[14px] sm:border-l border-[#8A8A8A]">
             <img alt="icon" src="../img/puzzle.png">
             <div>
               <p class="font-medium text-lg text-primary">لورم ایپسوم</p>
@@ -137,28 +165,28 @@
 
     <section class="bg-[#011309]">
       <div class="relative">
-        <img alt="img" class="absolute inset-y-0 right-0 h-full"
+        <img alt="img" class="absolute inset-y-0 right-0 h-full object-cover w-full md:w-auto brightness-[36%] lg:brightness-100"
           src="../img/green-dice-green-background-with-sparkling-lights_582637-23475 copy 1.png">
-        <div class="max-w-content mx-auto px-4 pl-12 pr-28">
+        <div class="max-w-content mx-auto px-4 min-[1080px]:pl-12 min-[1080px]:pr-28">
           <div class="grid grid-cols-12 gap-5">
-            <div class="col-span-6">
+            <div class="lg:col-span-6 col-span-12">
             </div>
-            <div class="col-span-6 relative py-[70px]">
-              <h3 class="text-[30px] text-white font-semibold leading-[100%]">
+            <div class="lg:col-span-6 col-span-12 relative py-[70px]">
+              <h3 class="sm:text-[30px] text-2xl text-white font-semibold leading-[100%]">
                 درباره
                 <span class="text-secondary">کازینو لایوبت</span>
               </h3>
-              <p class="mt-11 font-medium text-[22px] text-[#C4C4C6] text-justify">
+              <p class="mt-11 font-medium text-base leading-8 sm:text-[22px] text-[#C4C4C6] text-justify">
                 لــورم ایپــســــوم متن ساختگی با تولید سادگی نامفهوم از صنعت چـــاپ، و با استفاده از طراحـان گرافیک
                 است، چاپگرها و متون بلکه روزنـــامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
                 مورد نیــاز، و کاربـــــردهای متـنوع با هـــدف بهبود ابزارهای کاربــردی می باشد...
               </p>
               <div class="mt-6 flex items-center justify-end gap-2">
                 <a
-                  class="w-[160px] h-14 text-white rounded-[10px] border border-[#CCCCCC] font-bold text-[22px] flex-center">
+                  class="sm:w-[160px] btnHover w-28 sm:h-14 h-11 text-white rounded-[10px] border border-[#CCCCCC] font-bold text-lg sm:text-[22px] flex-center">
                   تماس با ما
                 </a>
-                <a class="w-[160px] h-14 bg-gradient-1 text-white rounded-[10px] font-bold text-[22px] flex-center">
+                <a class="sm:w-[160px] btnHover2 w-28 sm:h-14 h-11 bg-gradient-1 text-white rounded-[10px] font-bold text-lg sm:text-[22px] flex-center">
                   پشتیبانی
                 </a>
               </div>
@@ -168,10 +196,10 @@
       </div>
     </section>
 
-    <section class="pt-[122px]">
-      <div class="max-w-content mx-auto px-4 pl-12 pr-28">
-        <div class="flex items-center justify-between gap-2 relative">
-          <h4 class="font-semibold text-white text-[30px]">پرطرفدارترین بازی‌های <span
+    <section class="md:pt-[122px] pt-20">
+      <div class="max-w-content mx-auto px-4 min-[1080px]:pl-12 min-[1080px]:pr-28">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-5 sm:gap-2 relative">
+          <h4 class="font-semibold text-white text-2xl sm:text-[30px] text-center">پرطرفدارترین بازی‌های <span
               class="text-secondary">کازینویی</span></h4>
           <a class="text-xl cursor-pointer group hover:text-primary font-semibold text-white flex items-center gap-2">
             <p>مشاهده همه</p>
@@ -201,7 +229,7 @@
                   </div>
                   <p class="text-white font-medium line-clamp-2 mt-4">لورم ایپســـــوم متن ساختگی با تولید ســـــــادگی
                     نامفهوم از صنعت چاپ...</p>
-                  <a class="rounded-xl mt-4 w-full py-2 text-lg font-bold text-white block bg-gradient-1">شروع بازی</a>
+                  <a class="rounded-xl btnHover mt-4 w-full py-2 text-lg font-bold text-white block bg-gradient-1">شروع بازی</a>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -219,7 +247,7 @@
                   </div>
                   <p class="text-white font-medium line-clamp-2 mt-4">لورم ایپســـــوم متن ساختگی با تولید ســـــــادگی
                     نامفهوم از صنعت چاپ...</p>
-                  <a class="rounded-xl mt-4 w-full py-2 text-lg font-bold text-white block bg-gradient-1">شروع بازی</a>
+                  <a class="rounded-xl btnHover mt-4 w-full py-2 text-lg font-bold text-white block bg-gradient-1">شروع بازی</a>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -237,7 +265,7 @@
                   </div>
                   <p class="text-white font-medium line-clamp-2 mt-4">لورم ایپســـــوم متن ساختگی با تولید ســـــــادگی
                     نامفهوم از صنعت چاپ...</p>
-                  <a class="rounded-xl mt-4 w-full py-2 text-lg font-bold text-white block bg-gradient-1">شروع بازی</a>
+                  <a class="rounded-xl btnHover mt-4 w-full py-2 text-lg font-bold text-white block bg-gradient-1">شروع بازی</a>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -255,7 +283,7 @@
                   </div>
                   <p class="text-white font-medium line-clamp-2 mt-4">لورم ایپســـــوم متن ساختگی با تولید ســـــــادگی
                     نامفهوم از صنعت چاپ...</p>
-                  <a class="rounded-xl mt-4 w-full py-2 text-lg font-bold text-white block bg-gradient-1">شروع بازی</a>
+                  <a class="rounded-xl btnHover mt-4 w-full py-2 text-lg font-bold text-white block bg-gradient-1">شروع بازی</a>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -273,7 +301,7 @@
                   </div>
                   <p class="text-white font-medium line-clamp-2 mt-4">لورم ایپســـــوم متن ساختگی با تولید ســـــــادگی
                     نامفهوم از صنعت چاپ...</p>
-                  <a class="rounded-xl mt-4 w-full py-2 text-lg font-bold text-white block bg-gradient-1">شروع بازی</a>
+                  <a class="rounded-xl btnHover mt-4 w-full py-2 text-lg font-bold text-white block bg-gradient-1">شروع بازی</a>
                 </div>
               </div>
             </div>
@@ -282,11 +310,11 @@
       </div>
     </section>
 
-    <section class="pt-[131px] pb-[161px] relative">
+    <section class="md:pt-[131px] pt-20 md:pb-[111px] pb-9 relative">
       <img alt="shape" src="../img/Ellipse 952.png" class="absolute left-0 -top-[309px]">
-      <div class="max-w-content mx-auto px-4 pl-12 pr-28">
-        <div class="flex items-center justify-between gap-2 relative">
-          <h4 class="font-semibold text-white text-[30px]">پرطرفدارترین <span class="text-secondary">کازینوهای آنلاین
+      <div class="max-w-content mx-auto px-4 min-[1080px]:pl-12 min-[1080px]:pr-28">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-5 sm:gap-2 relative z-1">
+          <h4 class="font-semibold text-white text-2xl sm:text-[30px] text-center">پرطرفدارترین <span class="text-secondary">کازینوهای آنلاین
             </span> </h4>
           <a class="text-xl cursor-pointer group hover:text-primary font-semibold text-white flex items-center gap-2">
             <p>مشاهده همه</p>
@@ -299,11 +327,11 @@
           </a>
         </div>
         <div>
-          <div class="swiper casino !pt-[62px] relative">
+          <div class="swiper casino !py-[62px] relative">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div
-                  class="rounded-2xl relative border-[1.5px] border-[#ffffff15] bg-blur-1 p-4 flex items-center gap-4">
+                  class="rounded-2xl relative border-[1.5px] border-[#ffffff15] bg-blur-1 sm:p-4 p-2 flex items-center gap-4">
                   <img alt="logo" src="../img/logo 1.png">
                   <div class="h-14 w-[1px] bg-[#CDCDCD]"></div>
                   <div class="flex-grow text-white">
@@ -357,7 +385,7 @@
               </div>
               <div class="swiper-slide">
                 <div
-                  class="rounded-2xl relative border-[1.5px] border-[#ffffff15] bg-blur-1 p-4 flex items-center gap-4">
+                  class="rounded-2xl relative border-[1.5px] border-[#ffffff15] bg-blur-1 sm:p-4 p-2 flex items-center gap-4">
                   <img alt="logo" src="../img/Layer_1.png">
                   <div class="h-14 w-[1px] bg-[#CDCDCD]"></div>
                   <div class="flex-grow text-white">
@@ -411,7 +439,7 @@
               </div>
               <div class="swiper-slide">
                 <div
-                  class="rounded-2xl relative border-[1.5px] border-[#ffffff15] bg-blur-1 p-4 flex items-center gap-4">
+                  class="rounded-2xl relative border-[1.5px] border-[#ffffff15] bg-blur-1 sm:p-4 p-2 flex items-center gap-4">
                   <img alt="logo" src="../img/logo 1.png">
                   <div class="h-14 w-[1px] bg-[#CDCDCD]"></div>
                   <div class="flex-grow text-white">
@@ -465,7 +493,7 @@
               </div>
               <div class="swiper-slide">
                 <div
-                  class="rounded-2xl relative border-[1.5px] border-[#ffffff15] bg-blur-1 p-4 flex items-center gap-4">
+                  class="rounded-2xl relative border-[1.5px] border-[#ffffff15] bg-blur-1 sm:p-4 p-2 flex items-center gap-4">
                   <img alt="logo" src="../img/logo 1.png">
                   <div class="h-14 w-[1px] bg-[#CDCDCD]"></div>
                   <div class="flex-grow text-white">
@@ -525,9 +553,9 @@
 
     <section class="pt-11 pb-[86px] bg-[#0c0c0c6b] relative">
       <img alt="shape" src="../img/Ellipse 951.png" class="absolute right-0 -top-[326px]">
-      <div class="max-w-content mx-auto px-4 pl-12 pr-28">
-        <div class="flex items-center justify-between gap-2 relative">
-          <h4 class="font-semibold text-white text-[30px]">خدمات <span class="text-secondary">کازینو لایوبت </span>
+      <div class="max-w-content mx-auto px-4 min-[1080px]:pl-12 min-[1080px]:pr-28">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-5 sm:gap-2 relative">
+          <h4 class="font-semibold text-white text-2xl text-center sm:text-[30px]">خدمات <span class="text-secondary">کازینو لایوبت </span>
           </h4>
           <a class="text-xl cursor-pointer group hover:text-primary font-semibold text-white flex items-center gap-2">
             <p>مشاهده همه</p>
@@ -539,10 +567,10 @@
             </svg>
           </a>
         </div>
-        <div class="mt-4 grid grid-cols-2 gap-4 relative">
+        <div class="mt-4 grid md:grid-cols-2 grid-cols-1 gap-4 relative">
           <div>
             <div class="p-[1px] border border-[#FFFFFF14] rounded-2xl bg-[#FFFFFF14] overflow-hidden">
-              <div class="p-4 flex items-center gap-5 rounded-2xl">
+              <div class="sm:p-4 p-2 flex items-center sm:gap-5 gap-3 rounded-2xl">
                 <svg class="flex-shrink-0" width="30" height="29" viewBox="0 0 30 29" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -558,14 +586,14 @@
                     </linearGradient>
                   </defs>
                 </svg>
-                <p class="text-xl font-medium text-[#C4C4C6]">لورم ایپســـــــــوم متن ساختگی با تولید ســـــــــادگی
+                <p class="sm:text-xl font-medium text-[#C4C4C6]">لورم ایپســـــــــوم متن ساختگی با تولید ســـــــــادگی
                   نامفهوم..</p>
               </div>
             </div>
           </div>
           <div>
             <div class="p-[1px] border border-[#FFFFFF14] rounded-2xl bg-[#FFFFFF14] overflow-hidden">
-              <div class="p-4 flex items-center gap-5 rounded-2xl">
+              <div class="sm:p-4 p-2 flex items-center sm:gap-5 gap-3 rounded-2xl">
                 <svg class="flex-shrink-0" width="30" height="29" viewBox="0 0 30 29" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -581,14 +609,14 @@
                     </linearGradient>
                   </defs>
                 </svg>
-                <p class="text-xl font-medium text-[#C4C4C6]">لورم ایپســـــــــوم متن ساختگی با تولید ســـــــــادگی
+                <p class="sm:text-xl font-medium text-[#C4C4C6]">لورم ایپســـــــــوم متن ساختگی با تولید ســـــــــادگی
                   نامفهوم..</p>
               </div>
             </div>
           </div>
           <div>
             <div class="p-[1px] border border-[#FFFFFF14] rounded-2xl bg-[#FFFFFF14] overflow-hidden">
-              <div class="p-4 flex items-center gap-5 rounded-2xl">
+              <div class="sm:p-4 p-2 flex items-center sm:gap-5 gap-3 rounded-2xl">
                 <svg class="flex-shrink-0" width="30" height="29" viewBox="0 0 30 29" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -604,14 +632,14 @@
                     </linearGradient>
                   </defs>
                 </svg>
-                <p class="text-xl font-medium text-[#C4C4C6]">لورم ایپســـــــــوم متن ساختگی با تولید ســـــــــادگی
+                <p class="sm:text-xl font-medium text-[#C4C4C6]">لورم ایپســـــــــوم متن ساختگی با تولید ســـــــــادگی
                   نامفهوم..</p>
               </div>
             </div>
           </div>
           <div>
             <div class="p-[1px] border border-[#FFFFFF14] rounded-2xl bg-[#FFFFFF14] overflow-hidden">
-              <div class="p-4 flex items-center gap-5 rounded-2xl">
+              <div class="sm:p-4 p-2 flex items-center sm:gap-5 gap-3 rounded-2xl">
                 <svg class="flex-shrink-0" width="30" height="29" viewBox="0 0 30 29" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -627,7 +655,7 @@
                     </linearGradient>
                   </defs>
                 </svg>
-                <p class="text-xl font-medium text-[#C4C4C6]">لورم ایپســـــــــوم متن ساختگی با تولید ســـــــــادگی
+                <p class="sm:text-xl font-medium text-[#C4C4C6]">لورم ایپســـــــــوم متن ساختگی با تولید ســـــــــادگی
                   نامفهوم..</p>
               </div>
             </div>
@@ -636,10 +664,10 @@
       </div>
     </section>
 
-    <section class="pt-[120px] relative">
-      <div class="max-w-content mx-auto px-4 pl-12 pr-28">
-        <div class="flex items-center justify-between gap-2 relative">
-          <h4 class="font-semibold text-white text-[30px]">وبلاگ <span class="text-secondary">کازینو لایوبت </span>
+    <section class="md:pt-[120px] pt-20 relative">
+      <div class="max-w-content mx-auto px-4 min-[1080px]:pl-12 min-[1080px]:pr-28">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-5 sm:gap-2 relative">
+          <h4 class="font-semibold text-white text-center text-2xl sm:text-[30px]">وبلاگ <span class="text-secondary">کازینو لایوبت </span>
           </h4>
           <a class="text-xl cursor-pointer group hover:text-primary font-semibold text-white flex items-center gap-2">
             <p>مشاهده همه</p>
@@ -652,15 +680,15 @@
             </svg>
           </a>
         </div>
-        <div class="mt-[62px] grid grid-cols-12 gap-14 items-center">
-          <div class="col-span-7">
-            <h4 class="text-white font-bold text-[22px]">محل درج تایتل مقاله سایت</h4>
-            <p class="text-[22px] font-medium text-[#C4C4C6] text-justify mt-4">
+        <div class="mt-[62px] grid grid-cols-12 gap-y-10 gap-x-0 md:gap-14 items-center">
+          <div class="md:col-span-7 col-span-12 order-last md:order-first">
+            <h4 class="text-white font-bold text-lg sm:text-[22px]">محل درج تایتل مقاله سایت</h4>
+            <p class="sm:text-[22px] text-base leading-8 font-medium text-[#C4C4C6] text-justify mt-4">
               لــورم ایپســـوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها
               و متون بلکه روزنامه و مجــــــــــــله در ستون و سطر آنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
               نیاز، و کاربــردهای متـنوع با هدف بهبود ابزارها می باشد...
             </p>
-            <div class="flex items-center justify-end mt-4 gap-1.5 text-white text-lg">
+            <div class="flex items-center justify-end mt-4 gap-1.5 text-white sm:text-lg">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-calendar-week-fill text-[#EDEDED]" viewBox="0 0 16 16">
                 <path
@@ -669,7 +697,7 @@
               <p>5 اردیبهشت 1403</p>
             </div>
           </div>
-          <div class="col-span-5">
+          <div class="md:col-span-5 col-span-12">
             <img alt="img" src="../img/celebrating-investment-success-with-money-surrounding-man_706399-13289 1.png"
               class="rounded-2xl w-full">
           </div>
@@ -677,10 +705,10 @@
       </div>
     </section>
 
-    <section class="pt-[140px] relative">
-      <div class="max-w-content mx-auto px-4 pl-12 pr-28">
-        <div class="flex items-center justify-between gap-2 relative">
-          <h4 class="font-semibold text-white text-[30px]">نظرات کاربران <span class="text-secondary">کازینو لایوبت
+    <section class="md:pt-[140px] pt-20 relative">
+      <div class="max-w-content mx-auto px-4 min-[1080px]:pl-12 min-[1080px]:pr-28">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-5 sm:gap-2 relative z-1">
+          <h4 class="font-semibold text-white text-center text-2xl sm:text-[30px]">نظرات کاربران <span class="text-secondary">کازینو لایوبت
             </span> </h4>
           <a class="text-xl cursor-pointer group hover:text-primary font-semibold text-white flex items-center gap-2">
             <p>مشاهده همه</p>
@@ -697,17 +725,17 @@
           <div class="swiper testimonials">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="border border-[#FFFFFF14] bg-[#FFFFFF14] rounded-2xl px-7 pt-8 pb-9">
-                  <div class="flex items-center justify-between gap-2">
-                    <div class="flex items-center gap-4">
+                <div class="border border-[#FFFFFF14] bg-[#FFFFFF14] rounded-2xl lg:px-7 px-4 lg:pt-8 pt-5 lg:pb-9 pb-6">
+                  <div class="flex flex-col sm:flex-row items-center justify-between sm:gap-2 gap-4">
+                    <div class="flex items-center gap-4 w-full sm:w-auto">
                       <img alt="img" src="../img/Ellipse 25.png" class="w-[70px] h-[70px] rounded-full">
                       <div class="text-white">
                         <h5 class="font-bold text-xl">سعید احمدی</h5>
                         <p class="text-xs mt-1">عضویت از 3 سال پیش</p>
                       </div>
                     </div>
-                    <div>
-                      <div class="flex items-center gap-0.5">
+                    <div class="w-full sm:w-auto">
+                      <div class="flex items-center gap-0.5 justify-end">
                         <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M8.96026 1.29411C9.37979 0.455044 10.5685 0.490006 10.953 1.29411L13.2605 5.94394L18.3648 6.67812C19.2738 6.81797 19.6234 7.93672 18.9591 8.60099L15.2882 12.202L16.1622 17.2713C16.3021 18.1803 15.3232 18.8796 14.5191 18.46L9.97413 16.0477L5.39422 18.46C4.59012 18.8796 3.61121 18.1803 3.75105 17.2713L4.62508 12.202L0.954162 8.60099C0.289901 7.93672 0.639512 6.81797 1.5485 6.67812L6.68779 5.94394L8.96026 1.29411Z"
@@ -744,17 +772,17 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="border border-[#FFFFFF14] bg-[#FFFFFF14] rounded-2xl px-7 pt-8 pb-9">
-                  <div class="flex items-center justify-between gap-2">
-                    <div class="flex items-center gap-4">
+                <div class="border border-[#FFFFFF14] bg-[#FFFFFF14] rounded-2xl lg:px-7 px-4 lg:pt-8 pt-5 lg:pb-9 pb-6">
+                  <div class="flex flex-col sm:flex-row items-center justify-between sm:gap-2 gap-4">
+                    <div class="flex items-center gap-4 w-full sm:w-auto">
                       <img alt="img" src="../img/Ellipse 25.png" class="w-[70px] h-[70px] rounded-full">
                       <div class="text-white">
                         <h5 class="font-bold text-xl">سعید احمدی</h5>
                         <p class="text-xs mt-1">عضویت از 3 سال پیش</p>
                       </div>
                     </div>
-                    <div>
-                      <div class="flex items-center gap-0.5">
+                    <div class="w-full sm:w-auto">
+                      <div class="flex items-center gap-0.5 justify-end">
                         <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M8.96026 1.29411C9.37979 0.455044 10.5685 0.490006 10.953 1.29411L13.2605 5.94394L18.3648 6.67812C19.2738 6.81797 19.6234 7.93672 18.9591 8.60099L15.2882 12.202L16.1622 17.2713C16.3021 18.1803 15.3232 18.8796 14.5191 18.46L9.97413 16.0477L5.39422 18.46C4.59012 18.8796 3.61121 18.1803 3.75105 17.2713L4.62508 12.202L0.954162 8.60099C0.289901 7.93672 0.639512 6.81797 1.5485 6.67812L6.68779 5.94394L8.96026 1.29411Z"
@@ -791,17 +819,17 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="border border-[#FFFFFF14] bg-[#FFFFFF14] rounded-2xl px-7 pt-8 pb-9">
-                  <div class="flex items-center justify-between gap-2">
-                    <div class="flex items-center gap-4">
+                <div class="border border-[#FFFFFF14] bg-[#FFFFFF14] rounded-2xl lg:px-7 px-4 lg:pt-8 pt-5 lg:pb-9 pb-6">
+                  <div class="flex flex-col sm:flex-row items-center justify-between sm:gap-2 gap-4">
+                    <div class="flex items-center gap-4 w-full sm:w-auto">
                       <img alt="img" src="../img/Ellipse 25.png" class="w-[70px] h-[70px] rounded-full">
                       <div class="text-white">
                         <h5 class="font-bold text-xl">سعید احمدی</h5>
                         <p class="text-xs mt-1">عضویت از 3 سال پیش</p>
                       </div>
                     </div>
-                    <div>
-                      <div class="flex items-center gap-0.5">
+                    <div class="w-full sm:w-auto">
+                      <div class="flex items-center gap-0.5 justify-end">
                         <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M8.96026 1.29411C9.37979 0.455044 10.5685 0.490006 10.953 1.29411L13.2605 5.94394L18.3648 6.67812C19.2738 6.81797 19.6234 7.93672 18.9591 8.60099L15.2882 12.202L16.1622 17.2713C16.3021 18.1803 15.3232 18.8796 14.5191 18.46L9.97413 16.0477L5.39422 18.46C4.59012 18.8796 3.61121 18.1803 3.75105 17.2713L4.62508 12.202L0.954162 8.60099C0.289901 7.93672 0.639512 6.81797 1.5485 6.67812L6.68779 5.94394L8.96026 1.29411Z"
@@ -843,10 +871,10 @@
       </div>
     </section>
 
-    <section class="pt-[140px] pb-[124px] relative">
-      <div class="max-w-content mx-auto px-4 pl-12 pr-28">
-        <div class="flex items-center justify-between gap-2 relative z-1">
-          <h4 class="font-semibold text-white text-[30px]">سوالات متداول <span class="text-secondary">کازینو لایوبت
+    <section class="md:pt-[140px] pt-20 md:pb-[124px] pb-20 relative">
+      <div class="max-w-content mx-auto px-4 min-[1080px]:pl-12 min-[1080px]:pr-28">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-5 sm:gap-2 relative z-1">
+          <h4 class="font-semibold text-white text-center text-2xl sm:text-[30px]">سوالات متداول <span class="text-secondary">کازینو لایوبت
             </span> </h4>
           <a class="text-xl cursor-pointer group hover:text-primary font-semibold text-white flex items-center gap-2">
             <p>مشاهده همه</p>
@@ -864,7 +892,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div
-                  class="border border-[#FFFFFF14] text-white bg-[#FFFFFF14] rounded-2xl px-9 pt-11 pb-[30px] text-center">
+                  class="border border-[#FFFFFF14] text-white bg-[#FFFFFF14] rounded-2xl md:px-9 px-4 md:pt-11 pt-5 md:pb-[30px] pb-6 text-center">
                   <h6 class="text-[21px] font-medium">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم است؟</h6>
                   <p class="mt-[18px] font-medium text-justify text-[#C4C4C6]">لورم ایپسوم متن ساختــــــــــگی با تولید
                     سادگی نامفهوم از صنعت چـاپ، و با استفاده از طراحـان گرافیک است، چاپــــــگرها و متون بلکه روزنامه و
@@ -873,7 +901,7 @@
               </div>
               <div class="swiper-slide">
                 <div
-                  class="border border-[#FFFFFF14] text-white bg-[#FFFFFF14] rounded-2xl px-9 pt-11 pb-[30px] text-center">
+                  class="border border-[#FFFFFF14] text-white bg-[#FFFFFF14] rounded-2xl md:px-9 px-4 md:pt-11 pt-5 md:pb-[30px] pb-6 text-center">
                   <h6 class="text-[21px] font-medium">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم است؟</h6>
                   <p class="mt-[18px] font-medium text-justify text-[#C4C4C6]">لورم ایپسوم متن ساختــــــــــگی با تولید
                     سادگی نامفهوم از صنعت چـاپ، و با استفاده از طراحـان گرافیک است، چاپــــــگرها و متون بلکه روزنامه و
@@ -882,7 +910,7 @@
               </div>
               <div class="swiper-slide">
                 <div
-                  class="border border-[#FFFFFF14] text-white bg-[#FFFFFF14] rounded-2xl px-9 pt-11 pb-[30px] text-center">
+                  class="border border-[#FFFFFF14] text-white bg-[#FFFFFF14] rounded-2xl md:px-9 px-4 md:pt-11 pt-5 md:pb-[30px] pb-6 text-center">
                   <h6 class="text-[21px] font-medium">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم است؟</h6>
                   <p class="mt-[18px] font-medium text-justify text-[#C4C4C6]">لورم ایپسوم متن ساختــــــــــگی با تولید
                     سادگی نامفهوم از صنعت چـاپ، و با استفاده از طراحـان گرافیک است، چاپــــــگرها و متون بلکه روزنامه و
@@ -891,7 +919,7 @@
               </div>
               <div class="swiper-slide">
                 <div
-                  class="border border-[#FFFFFF14] text-white bg-[#FFFFFF14] rounded-2xl px-9 pt-11 pb-[30px] text-center">
+                  class="border border-[#FFFFFF14] text-white bg-[#FFFFFF14] rounded-2xl md:px-9 px-4 md:pt-11 pt-5 md:pb-[30px] pb-6 text-center">
                   <h6 class="text-[21px] font-medium">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم است؟</h6>
                   <p class="mt-[18px] font-medium text-justify text-[#C4C4C6]">لورم ایپسوم متن ساختــــــــــگی با تولید
                     سادگی نامفهوم از صنعت چـاپ، و با استفاده از طراحـان گرافیک است، چاپــــــگرها و متون بلکه روزنامه و
@@ -910,14 +938,14 @@
 
   <footer class="relative">
     <img alt="img" src="../img/Ellipse 954.png" class="absolute left-0 bottom-0">
-    <div class="max-w-content mx-auto px-4 relative pl-12 pr-28">
-      <div class="flex items-center justify-between gap-3 pt-[22px] pb-[66px] border-t-[0.5px] border-[#F5F5F5]">
-        <div class="flex items-center gap-9 text-[17px] font-bold">
+    <div class="max-w-content mx-auto px-4 relative min-[1080px]:pl-12 min-[1080px]:pr-28">
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-3 pt-[22px] lg:pb-[66px] pb-6 border-t-[0.5px] border-[#F5F5F5]">
+        <div class="flex items-center justify-center gap-6 sm:gap-9 text-sm sm:text-[17px] font-bold">
           <a class="hover:text-secondary text-[#AEAEAE]">راهنما</a>
           <a class="hover:text-secondary text-[#AEAEAE]">سوالات متداول</a>
           <a class="hover:text-secondary text-[#AEAEAE]">حریم خصوصی</a>
         </div>
-        <div class="flex items-center gap-5">
+        <div class="flex items-center justify-center gap-5">
           <a class="group">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_2_802)">
@@ -972,10 +1000,10 @@
             </svg>
           </a>
           <a class="group">
-            <svg class="transition group-hover:fill-primary" width="23" height="22" viewBox="0 0 23 22" fill="none"
+            <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_2_800)">
-                <path
+                <path class="transition group-hover:fill-primary"
                   d="M22.7324 2.39494C22.6002 3.03567 22.4638 3.67576 22.3357 4.31712C21.3639 9.20431 20.392 14.0919 19.4202 18.98C19.3472 19.3443 19.2814 19.7111 19.1937 20.071C18.8659 21.4117 17.9558 21.3308 17.2498 20.7869C15.7967 19.6672 14.3609 18.5207 12.9179 17.3851C12.7033 17.2164 12.4821 17.0559 12.2758 16.8756C12.1573 16.7731 12.0873 16.7858 11.9794 16.896C11.1441 17.7616 10.3017 18.6195 9.46341 19.4825C9.21382 19.7372 8.92985 19.8971 8.55103 19.8818C8.57296 19.5315 8.59312 19.1933 8.61564 18.8558C8.71406 17.3743 8.8095 15.8929 8.9174 14.4121C8.93144 14.2838 8.98681 14.1648 9.07391 14.0758C12.2108 11.0403 15.3505 8.0082 18.493 4.9795C18.5315 4.94192 18.5831 4.91581 18.6056 4.86613C18.656 4.76168 18.6922 4.64895 18.7337 4.54004C18.6258 4.50947 18.5078 4.43431 18.4111 4.45788C18.2327 4.50428 18.0623 4.58127 17.9066 4.68589C13.9963 7.30867 10.0883 9.93569 6.18262 12.567C6.12115 12.6133 6.04999 12.6427 5.97543 12.6524C5.90088 12.6622 5.82524 12.6521 5.75519 12.623C4.12191 12.0708 2.48508 11.5307 0.852402 10.9753C0.634884 10.9018 0.429584 10.7918 0.244147 10.6492C-0.0522729 10.4168 -0.091997 10.0818 0.173595 9.81425C0.396149 9.58387 0.656437 9.39968 0.941328 9.27097C2.56749 8.57993 4.20195 7.915 5.83759 7.24306C10.9404 5.14467 16.0427 3.04883 21.1447 0.955535C21.3088 0.885118 21.4816 0.840499 21.6575 0.823058C22.1911 0.780385 22.5468 1.06317 22.6843 1.62174C22.6974 1.67524 22.7163 1.72619 22.7324 1.77842V2.39494Z"
                   fill="#E67670" />
               </g>
@@ -987,7 +1015,7 @@
             </svg>
           </a>
         </div>
-        <p class="text-white text-[17px]">تمام حقوق مادی و معنوی این وب سایت متعلق به <a class="hover:text-secondary">سایت بت</a> است.</p>
+        <p class="text-white text-sm sm:text-[17px] text-center">تمام حقوق مادی و معنوی این وب سایت متعلق به <a class="hover:text-primary">سایت بت</a> است.</p>
       </div>
     </div>
   </footer>
